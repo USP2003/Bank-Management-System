@@ -64,7 +64,7 @@ Power BI (Visualization)
 │ └── sample_data.sql
 ├── powerbi/ # Dashboard files
 │ ├── dashboard.pbix
-│ └── dashboard.png  (![img_1.png](img_1.png))
+│ └── dashboard.png  
 ├── README.md
 └── .gitignore
 
