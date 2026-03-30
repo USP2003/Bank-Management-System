@@ -6,8 +6,8 @@ public class Updation {
 
             java.sql.Connection con = DriverManager.getConnection(
                     "jdbc:oracle:thin:@localhost:1521:xe",
-                    "system",
-                    "IIM2026");
+                    "username",
+                    "password");
             CallableStatement cs= con.prepareCall("{call DETECT_RISK()}");
             cs.execute();
             System.out.println("Risk Detection executed");
