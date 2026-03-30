@@ -6,8 +6,8 @@ public class ViewTransaction {
 
             java.sql.Connection con = DriverManager.getConnection(
                     "jdbc:oracle:thin:@localhost:1521:xe",
-                    "system",
-                    "IIM2026");
+                    "username",
+                    "password");
 
             Statement st = con.createStatement();
             ResultSet rs=st.executeQuery("SELECT * FROM TRANSACTIONS");
