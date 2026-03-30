@@ -6,8 +6,8 @@ public class InsertTransaction {
 
             java.sql.Connection con = DriverManager.getConnection(
                     "jdbc:oracle:thin:@localhost:1521:xe",
-                    "system",
-                    "IIM2026");
+                    "username",
+                    "password");
 
            PreparedStatement pr= con.prepareStatement("INSERT INTO transactions VALUES(?,?,?,?,?,SYSDATE,NULL)");
            pr.setInt(1,404);
