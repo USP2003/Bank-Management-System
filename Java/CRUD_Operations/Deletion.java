@@ -6,8 +6,8 @@ public class Deletion {
 
             java.sql.Connection con = DriverManager.getConnection(
                     "jdbc:oracle:thin:@localhost:1521:xe",
-                    "system",
-                    "IIM2026");
+                    "username",
+                    "password");
 
             PreparedStatement pr=con.prepareStatement("DELETE FROM TRANSACTIONS WHERE AMOUNT=?");
             pr.setInt(1,5000);
