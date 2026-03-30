@@ -2,8 +2,8 @@ import pandas as pd
 import oracledb
 
 connection= oracledb.connect(
-    user="system",
-    password="IIM2026",
+    user="username",
+    password="password",
     dsn="localhost:1521/xe"
 )
 df=pd.read_sql("SELECT * FROM TRANSACTIONS", connection)
